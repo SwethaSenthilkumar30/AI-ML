@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Academic Performance Predictor</title>
+</head>
+<body>
+    <h1>Student Academic Performance Predictor</h1>
+    
+    {% if error %}
+    <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <form action="/predict" method="post">
+        <label for="study_hours">Study Hours:</label><br>
+        <input type="number" id="study_hours" name="study_hours" step="0.1" required><br><br>
+
+        <label for="attendance">Attendance Percentage:</label><br>
+        <input type="number" id="attendance" name="attendance" step="0.1" min="0" max="100" required><br><br>
+
+        <label for="previous_grade_numeric">Previous Grade (Numeric e.g., 1-5):</label><br>
+        <input type="number" id="previous_grade_numeric" name="previous_grade_numeric" step="1" min="1" max="5" required><br><br>
+
+        <input type="submit" value="Predict Performance">
+    </form>
+</body>
+</html>
