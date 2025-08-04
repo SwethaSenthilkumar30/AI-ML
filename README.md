@@ -35,12 +35,4 @@ This repository contains a collection of Python notebooks, scripts, datasets, an
 
 ---
 
-## 🔧 How to Use
 
-1. Clone or download the repository.
-2. Open any `.ipynb` files using **Jupyter Notebook**, **VS Code**, or **Google Colab**.
-3. For Python scripts (`.py`), run them via terminal or IDE like **PyCharm** or **VS Code**.
-4. Ensure required libraries (e.g., pandas, numpy, sklearn, etc.) are installed.
-
-```bash
-pip install -r requirements.txt
